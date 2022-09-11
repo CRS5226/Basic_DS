@@ -1,0 +1,25 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+int n,a,r,sum=0,w,c=0,i=0;
+cout<<"enter the binary number: ";
+cin>>n;
+a=n;
+w=n;
+/*while(w!=0){
+    w=w/10;
+    c++;
+}*/
+
+    while(a!=0){
+    r=a%10;
+    sum=sum+(r*pow(2,i));
+    a=a/10;
+    ++i;
+    }
+
+cout<<"decimal number is: "<<sum;
+return 0;
+}

@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a[10],i,n,j,q;
+cout<<"enter the size: ";
+cin>>n;
+for(i=0; i<=n-1; ++i){
+    cout<<"enter number: ";
+    cin>>a[i];
+}
+
+for(i=0; i<=n-1; ++i){
+         q=a[0];
+         a[n]=q;
+    for(i=0, j=0; j<=n-1; ++j){
+       a[i+j]=a[i+(j+1)];
+       //cout<<a[i+j]<<endl;
+    }
+        break;
+}
+
+for(i=0; i<=n-1; ++i){
+    cout<<a[i]<<endl;
+}
+}

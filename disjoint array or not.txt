@@ -1,0 +1,28 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+int a[10], i, n,j,b[10],s,q=0;
+cout<<"enter size: ";
+cin>>n;
+for(i=0; i<=n-1; ++i){
+    cout<<"enter number: ";
+    cin>>a[i];
+}
+cout<<"enter size: ";
+cin>>s;
+for(i=0; i<=s-1; ++i){
+    cout<<"enter number: ";
+    cin>>b[i];
+}
+for(i=0; i<=n-1; ++i){
+    for(j=0; j<=s-1; ++j){
+        if(b[j]==a[i]){
+            q++;
+        }
+    }
+}
+if(q==0){
+    cout<<"it is disjoint";
+}else cout<<"it is not disjoint";
+}

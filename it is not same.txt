@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+int a[10],b[10],i,n,m,q=0;
+cout<<"enter size in 1: ";
+cin>>n;
+cout<<"enter size in 2: ";
+cin>>m;
+for(i=0; i<=n-1; ++i){
+    cout<<"enter the value in 1: ";
+    cin>>a[i];
+}
+cout<<endl;
+for(i=0; i<=m-1; ++i){
+    cout<<"enter the value in 2: ";
+    cin>>b[i];
+}
+
+for(i=0; i<=n-1; ++i){
+    if(a[i]==b[i]){
+        q++;
+    }
+}
+if(q==n && q==m){
+    cout<<"it is same";
+}else cout<<"it is not same";
+return 0;
+}

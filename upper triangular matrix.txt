@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a[10][10],i, j,r,c,flag=0;
+cout<<"enter the rows: ";
+cin>>r;
+cout<<"enter the col: ";
+cin>>c;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<"a"<<i+1<<j+1<<": ";
+        cin>>a[i][j];
+    }
+}
+cout<<"the given matrix is: "<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<a[i][j]<<"\t";
+    }
+    cout<<endl;
+}
+for(i=1; i<r; ++i){
+    for(j=0; j<i; ++j){
+        if(a[i][j]!=0){
+            flag=0;
+        }else flag=1;
+
+    }
+}
+if(flag==1){
+            cout<<"upper tri";
+        }else cout<<"not";
+}

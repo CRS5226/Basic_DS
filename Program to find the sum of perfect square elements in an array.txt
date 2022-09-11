@@ -1,0 +1,25 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+int a[10],b[10],i,n,j,sum=0,d=0;
+cout<<"enter size : ";
+cin>>n;
+for(i=0; i<=n-1; ++i){
+    cout<<"enter the value: ";
+    cin>>a[i];
+}
+for(i=0; i<=n-1; ++i){
+    for(j=1; j<=100; ++j){
+        if(a[i]==pow(j,2)){
+            b[d]=a[i];
+            d++;
+        }
+    }
+}
+for(i=0; i<=d-1; ++i){
+    cout<<b[i]<<endl;
+}
+return 0;
+}

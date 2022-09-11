@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a[10][10], i, j,r,c,h=0,l,b[10],q[10];
+cout<<"enter the row: ";
+cin>>r;
+cout<<"enter the col: ";
+cin>>c;
+cout<<"enter the element"<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<"a"<<i+1<<j+1<<": ";
+        cin>>a[i][j];
+    }
+}
+cout<<endl;
+cout<<"the given matrix is: "<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<a[i][j]<<"\t";
+    }
+    cout<<endl;
+}
+cout<<endl;
+for(i=0; i<=r-1; ++i){
+        l=a[i][j];
+    for(j=0; j<=r-1; ++j){
+        if(a[i][j]<l){
+            l=a[i][j];
+    }
+
+}
+    cout<<l<<endl;
+    b[i]=l;
+}
+cout<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        if(a[j][i]>h){
+            h=a[j][i];
+        }
+    }
+    cout<<h<<endl;
+    q[i]=h;
+    h=0;
+
+}
+cout<<endl;
+for(i=0; i<=r-1; ++i){
+    cout<<b[i]<<endl;
+}
+cout<<endl;
+for(i=0; i<=r-1; ++i){
+    cout<<q[i]<<endl;
+}
+cout<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=r-1; ++j){
+        if(b[i]==q[j]){
+            cout<<b[i]<<" is a saddle point";
+        }
+    }
+}
+return 0;
+}

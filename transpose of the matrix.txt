@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a[10][10], i, j, c, r;
+cout<<"enter the number of rows: ";
+cin>>r;
+cout<<"enter the number of col: ";
+cin>>c;
+cout<<"enter the element"<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+
+        cout<<"a"<<i+1<<j+1<<":";
+    cin>>a[i][j];
+    }
+}
+///////////////////////////////////////////////////////////////////////
+cout<<"the given matrix is: "<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<a[i][j]<<"\t";
+    }
+    cout<<endl;
+}
+////////////////////////////////////////////////////////////////////
+cout<<"the transpose of the matrix is: "<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<a[j][i]<<"\t";
+    }
+    cout<<endl;
+}
+}

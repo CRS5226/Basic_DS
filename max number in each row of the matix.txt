@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a[10][10],i, j,r,c,m=0;
+cout<<"enter the rows: ";
+cin>>r;
+cout<<"enter the col: ";
+cin>>c;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<"a"<<i+1<<j+1<<": ";
+        cin>>a[i][j];
+    }
+}
+cout<<"the given matrix is: "<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=c-1; ++j){
+        cout<<a[i][j]<<"\t";
+    }
+    cout<<endl;
+}
+cout<<endl;
+for(i=0; i<=r-1; ++i){
+    for(j=0; j<=r-1; ++j){
+
+        if(a[i][j]>m){
+            m=a[i][j];
+        }
+    }
+    cout<<m<<endl;
+    m=0;
+}
+
+}

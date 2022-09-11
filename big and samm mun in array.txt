@@ -1,0 +1,29 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+int a[10],i,n,temp,j;
+cout<<"enter the elements: ";
+cin>>n;
+for(i=0; i<=n-1; ++i){
+    cout<<"enter the value: ";
+    cin>>a[i];
+}
+for(i=0; i<=n-1; ++i){
+    for(j=i+1; j<=n-1; ++j){
+        if(a[i]>a[j]){
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+        }
+
+    }
+/*for(i=0; i<=n-1; ++i){
+    cout<<a[i]<<endl;
+}*/
+cout<<"biggest number is: "<<a[n-1]<<endl;
+cout<<"smallest number is: "<<a[0]<<endl;
+return 0;
+}

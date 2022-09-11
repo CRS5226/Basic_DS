@@ -1,0 +1,19 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+int e,c=0,i,r,a;
+cout<<"enter the last number: ";
+cin>>e;
+for(i=1;i<=e;++i){
+        a=i;
+    while(a!=0){
+    r=a%10;
+    if(r==3){c++;}
+    a=a/10;
+    }
+}
+cout<<"3 will come: "<<c;
+return 0;
+}
